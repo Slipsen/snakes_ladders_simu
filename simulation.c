@@ -4,15 +4,13 @@
 
 
 
-typedef struct map our_map;
 typedef struct point a_point;
 typedef struct storage a_storage;
+a_point* create_point(int origin, int destination);
 
 
 //important functions
-a_point* create_point(int origin, int destination);
-void add_value(our_map* the_map, int key, int value);
-int get_value(our_map* the_map, int key);
+
 struct point {
     int origin;
     int destination;
